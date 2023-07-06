@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* html section- contains background gif and size for gif */
+html {
+  height: auto;
+  width: auto;
+  background-image: url(../assets/img/GREGORYS\ PORTFOLIO.gif);
+  background-repeat: no-repeat;
+  background-size: 150% 120%;
+}
+/* controls highlighted and clickable text*/
+a:visited {
+  color: darkgreen;
+  text-decoration: none;
+}
+/* layout for header, title,and header nav begins here */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+span {
+  color: green;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 30rem;
+  font-size: 1.5rem;
+  color: darkgreen;
+  text-decoration: none;
+}
+
+/* header style ends here*/
+/* section for about me images and text*/
+.about-Me {
+  margin-top: 32vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border: solid darkgreen;
+  flex-basis: content;
+  width: 74%;
+  padding: 1px 0px;
+  color: white;
+}
+
+.about-text {
+  color: white;
+  width: 550px;
+  word-spacing: 2px;
+}
+.aboutme-h2 {
+  margin-left: 30%;
+  font-size: 300%;
+  color: darkgreen;
+}
+/* about me ends here*/
+/* section 2 images and text (my work) starts here*/
+.section2 {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  margin-top: 46vh;
+  justify-content: flex-end;
+  border: solid darkgreen;
+  width: 100%;
+  padding: 1px 0px;
+  color: white;
+}
+.work-h2 {
+  color: darkgreen;
+  margin-left: 43%;
+  font-size: 400%;
+}
+.here {
+  cursor: pointer;
+}
+.work-p {
+  margin-left: 33%;
+  color: white;
+}
+.workimg1 {
+  margin-right: 19.9rem;
+}
+ /*no setting for image2 (image on the right) do commented out unless image position needs to be adjusted 
+.workimg2 {
+} */
+ /*section 2 ends here 
+/* section for resume starts here*/
+.resume {
+  margin-top: 46vh;
+  margin-bottom: 32vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  border: solid darkgreen;
+  flex-basis: content;
+  width: 83%;
+  padding: 1px 0px;
+  color: white;
+}
+.resumeimg {
+  margin-left: 55%;
+  margin-top: -123px;
+}
+.resumeh2 {
+  font-size: 400%;
+  color: darkgreen;
+}
+.resumeul {
+  margin-top: 30px;
+  font-size: 350%;
+  margin-left: 185px;
+  list-style: square;
+}
+/* resume sections ends here*/
+/* footer section starts here */
+.footerh2 {
+  font-size: 200%;
+}
+
+footer {
+  list-style-type: none;
+  padding: 10.5px 25px;
+  justify-content: space-around;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+/* for media adjustments with other devises */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+.about-Me{
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+  main {
+    max-width: 960px;
+    flex-direction: column;
+  }
+}
