@@ -12,9 +12,23 @@ html {
   background-size: 150% 120%;
 }
 /* controls highlighted and clickable text*/
+a:link {
+  color: darkgreen;
+  text-decoration: none;
+}
+
 a:visited {
   color: darkgreen;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+
 }
 /* layout for header, title,and header nav begins here */
 .header {
